@@ -8,7 +8,7 @@ public:
         {
             int len=0;
             int curr=nums[i];
-            if(s.find(nums[i]-1)!=s.end()) continue;
+            if(s.find(nums[i]-1)!=s.end()) ;
             else
                  
                  
