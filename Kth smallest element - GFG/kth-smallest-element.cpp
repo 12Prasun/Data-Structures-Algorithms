@@ -16,17 +16,17 @@ class Solution{
     int kthSmallest(int arr[], int l, int r, int k) {
         //code here
         int n = r+1;
-        priority_queue<int,vector<int>,greater<int>> minheap;
+        priority_queue<int,vector<int>,greater<int>>minheap;
         for(int i=0;i<n;i++)
         {
             minheap.push(arr[i]);
         }
         int ans;
-        for(int i=1;i<=k;i++){
+        for(int i=1;i<k;i++){
             ans = minheap.top();
             minheap.pop();
         }
-        return ans;
+        return minheap.top();
     }
 };
 
