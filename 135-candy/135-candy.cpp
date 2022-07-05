@@ -2,15 +2,15 @@ class Solution {
 public:
     int candy(vector<int>& ratings) {
         int n=ratings.size();
-        // int l[n],r[n];
-        vector<int>l(n,1);
-        vector<int>r(n,1);
+         int l[n],r[n];
+       // vector<int>l(n,1);
+        //vector<int>r(n,1);
         int sum=0;
         
-        /*for(int i=0;i<n;i++)
+        for(int i=0;i<n;i++)
         {
             l[i]=r[i]=1;
-        }*/
+        }
         for(int i=0;i<n-1;i++)
         {
             if(ratings[i+1]>ratings[i])
